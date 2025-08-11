@@ -21,12 +21,7 @@ class PluggyApi:
         header = {"accept": "application/json", "content-type": "application/json"}
         
         response = requests.post(url, json=payload, headers=header)
-        
-        if response.status_code == ''
         return response.json()
-        
-        except Exception as e:
-            return f"Error retriving API Key: {e}"
         
 
     def get_connect_token(self) -> list[str]:
